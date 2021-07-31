@@ -14,6 +14,7 @@
 		C8826A0226B6001B00502999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8826A0126B6001B00502999 /* LaunchScreen.storyboard */; };
 		C8826A0526B607B700502999 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8826A0426B607B700502999 /* CardView.swift */; };
 		C8826A0726B612B700502999 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8826A0626B612B700502999 /* CardModel.swift */; };
+		C8826A0C26B613F900502999 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8826A0B26B613F900502999 /* CardData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C8826A0126B6001B00502999 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8826A0426B607B700502999 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C8826A0626B612B700502999 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		C8826A0B26B613F900502999 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		C88269F126B5C99400502999 /* Learn by Doing */ = {
 			isa = PBXGroup;
 			children = (
+				C8826A0A26B613EA00502999 /* Data */,
 				C8826A0926B612CC00502999 /* StoryBoard */,
 				C8826A0826B612BD00502999 /* Model */,
 				C8826A0326B604C000502999 /* View */,
@@ -100,6 +103,14 @@
 				C8826A0126B6001B00502999 /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		C8826A0A26B613EA00502999 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C8826A0B26B613F900502999 /* CardData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8826A0C26B613F900502999 /* CardData.swift in Sources */,
 				C88269F526B5C99400502999 /* ContentView.swift in Sources */,
 				C8826A0726B612B700502999 /* CardModel.swift in Sources */,
 				C8826A0526B607B700502999 /* CardView.swift in Sources */,

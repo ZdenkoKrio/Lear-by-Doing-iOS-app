@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Card: Identifiable {
-    let id: UUID
+    let id: UUID = UUID()
     let title: String
     let headline: String
     let image: String

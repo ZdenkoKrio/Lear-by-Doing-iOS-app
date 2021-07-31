@@ -9,20 +9,20 @@ import SwiftUI
 
 struct CardView: View {
     // MARK: - Properties
-    var gradient: [Color] = [Color("Color01"), Color("Color02")]
+    let card: Card
     
     // MARK: - Body
     var body: some View {
         ZStack {
-            Image("developer-no1")
+            Image(card.image)
             
             VStack {
-                Text("SwiftUI")
+                Text(card.title)
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
                 
-                Text("Better apps. Less code.")
+                Text(card.headline)
                     .fontWeight(.light)
                     .italic()
             } // VSTACK
@@ -42,7 +42,7 @@ struct CardView: View {
                 .accentColor(.white)
                 .padding(.vertical)
                 .padding(.horizontal, 24)
-                .background(LinearGradient(gradient: Gradient(colors: gradient),
+                .background(LinearGradient(gradient: Gradient(colors: card.gradientColors),
                                            startPoint: .leading,
                                            endPoint: .trailing))
                 .clipShape(Capsule())
@@ -52,7 +52,7 @@ struct CardView: View {
             
         } // ZSTACK
         .frame(width: 335, height: 545)
-        .background(LinearGradient(gradient: Gradient(colors: gradient),
+        .background(LinearGradient(gradient: Gradient(colors: card.gradientColors),
                                    startPoint: .top,
                                    endPoint: .bottom))
         .cornerRadius(16)
@@ -62,7 +62,7 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        CardView(card: cardData[1])
             .previewLayout(.sizeThatFits)
     }
 }
