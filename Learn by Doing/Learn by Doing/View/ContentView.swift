@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(alignment: .center, spacing: 20) {
+                ForEach(1 ..< 6) { item in
+                    CardView()
+                } // LOOP
+            } // HSTACK
+            .padding(20)
+        } // SCROLL
     }
 }
 
