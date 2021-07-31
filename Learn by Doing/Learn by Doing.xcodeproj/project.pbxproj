@@ -11,6 +11,7 @@
 		C88269F526B5C99400502999 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88269F426B5C99400502999 /* ContentView.swift */; };
 		C88269F726B5C99800502999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88269F626B5C99800502999 /* Assets.xcassets */; };
 		C88269FA26B5C99800502999 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88269F926B5C99800502999 /* Preview Assets.xcassets */; };
+		C8826A0226B6001B00502999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8826A0126B6001B00502999 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		C88269F626B5C99800502999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C88269F926B5C99800502999 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C88269FB26B5C99800502999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8826A0126B6001B00502999 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				C88269F626B5C99800502999 /* Assets.xcassets */,
 				C88269FB26B5C99800502999 /* Info.plist */,
 				C88269F826B5C99800502999 /* Preview Content */,
+				C8826A0126B6001B00502999 /* LaunchScreen.storyboard */,
 			);
 			path = "Learn by Doing";
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8826A0226B6001B00502999 /* LaunchScreen.storyboard in Resources */,
 				C88269FA26B5C99800502999 /* Preview Assets.xcassets in Resources */,
 				C88269F726B5C99800502999 /* Assets.xcassets in Resources */,
 			);
