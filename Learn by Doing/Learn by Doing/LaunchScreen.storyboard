@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -16,14 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="gvd-M4-RsC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="gvd-M4-RsC">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="818" id="LMy-cQ-7se"/>
+                                    <constraint firstAttribute="height" constant="896" id="LMy-cQ-7se"/>
                                     <constraint firstAttribute="width" constant="414" id="a0b-xu-bkI"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="PLU-ig-32L">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="PLU-ig-32L">
                                 <rect key="frame" x="87" y="384" width="220.5" height="155"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-swift-outlined" translatesAutoresizingMaskIntoConstraints="NO" id="eyf-7D-sxx">
@@ -37,7 +37,6 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="eyf-7D-sxx" firstAttribute="centerY" secondItem="PLU-ig-32L" secondAttribute="centerY" id="EL8-WR-aYs"/>
                                     <constraint firstItem="eyf-7D-sxx" firstAttribute="centerX" secondItem="PLU-ig-32L" secondAttribute="centerX" id="T3u-Dm-46I"/>
                                 </constraints>
                             </stackView>
@@ -45,10 +44,12 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gvd-M4-RsC" secondAttribute="bottom" id="8Gb-of-eJc"/>
+                            <constraint firstItem="PLU-ig-32L" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="340" id="2yv-R4-XGA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gvd-M4-RsC" secondAttribute="bottom" constant="-34" id="8Gb-of-eJc"/>
                             <constraint firstItem="gvd-M4-RsC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ajw-m5-ukj"/>
-                            <constraint firstItem="gvd-M4-RsC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ItW-1S-j8L"/>
+                            <constraint firstItem="gvd-M4-RsC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="-44" id="ItW-1S-j8L"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gvd-M4-RsC" secondAttribute="trailing" id="iY6-7b-J7b"/>
+                            <constraint firstItem="PLU-ig-32L" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="87" id="vRQ-1Z-mTn"/>
                         </constraints>
                     </view>
                 </viewController>
