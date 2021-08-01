@@ -10,6 +10,7 @@ import SwiftUI
 struct CardView: View {
     // MARK: - Properties
     let card: Card
+    var haptic = UIImpactFeedbackGenerator(style: .heavy)
     
     @State private var fadeIn: Bool = false
     @State private var moveDownward: Bool = false
@@ -38,6 +39,7 @@ struct CardView: View {
                 print("Button was tapped.")
                 
                 playSound(sound: "sound-chime", type: "mp3")
+                self.haptic.impactOccurred()
             }, label: {
                 HStack {
                     Text("Learn".uppercased())
