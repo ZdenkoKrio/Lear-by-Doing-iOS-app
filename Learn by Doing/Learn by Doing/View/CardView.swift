@@ -15,6 +15,7 @@ struct CardView: View {
     @State private var fadeIn: Bool = false
     @State private var moveDownward: Bool = false
     @State private var moveUpward: Bool = false
+    @State private var showAlert: Bool = false
     
     // MARK: - Body
     var body: some View {
@@ -40,6 +41,7 @@ struct CardView: View {
                 
                 playSound(sound: "sound-chime", type: "mp3")
                 self.haptic.impactOccurred()
+                self.showAlert.toggle()
             }, label: {
                 HStack {
                     Text("Learn".uppercased())
@@ -74,7 +76,12 @@ struct CardView: View {
                 self.moveDownward.toggle()
                 self.moveUpward.toggle()
             }
-        }
+        } // ON_APPEAR
+        .alert(isPresented: $showAlert, content: {
+            Alert(title: Text(card.title),
+                  message: Text(card.message),
+                  dismissButton: .default(Text("OK")))
+        }) // ALERT
     }
 }
 
