@@ -17,7 +17,33 @@
 		C8826A0C26B613F900502999 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8826A0B26B613F900502999 /* CardData.swift */; };
 		C8826A0E26B6176400502999 /* sound-chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8826A0D26B6176400502999 /* sound-chime.mp3 */; };
 		C8826A1226B617B700502999 /* PlaySoundUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8826A1126B617B700502999 /* PlaySoundUtility.swift */; };
+		C8826A1826B61F4C00502999 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8826A1726B61F4C00502999 /* Stickers.xcassets */; };
+		C8826A1C26B61F4C00502999 /* stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C8826A1526B61F4900502999 /* stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8826A1A26B61F4C00502999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C88269E726B5C99400502999 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8826A1426B61F4900502999;
+			remoteInfo = stickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C8826A2026B61F4C00502999 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C8826A1C26B61F4C00502999 /* stickers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C88269EF26B5C99400502999 /* Learn by Doing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn by Doing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +58,9 @@
 		C8826A0B26B613F900502999 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 		C8826A0D26B6176400502999 /* sound-chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-chime.mp3"; sourceTree = "<group>"; };
 		C8826A1126B617B700502999 /* PlaySoundUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundUtility.swift; sourceTree = "<group>"; };
+		C8826A1526B61F4900502999 /* stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8826A1726B61F4C00502999 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		C8826A1926B61F4C00502999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				C88269F126B5C99400502999 /* Learn by Doing */,
+				C8826A1626B61F4900502999 /* stickers */,
 				C88269F026B5C99400502999 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				C88269EF26B5C99400502999 /* Learn by Doing.app */,
+				C8826A1526B61F4900502999 /* stickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +166,15 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		C8826A1626B61F4900502999 /* stickers */ = {
+			isa = PBXGroup;
+			children = (
+				C8826A1726B61F4C00502999 /* Stickers.xcassets */,
+				C8826A1926B61F4C00502999 /* Info.plist */,
+			);
+			path = stickers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,15 +185,32 @@
 				C88269EB26B5C99400502999 /* Sources */,
 				C88269EC26B5C99400502999 /* Frameworks */,
 				C88269ED26B5C99400502999 /* Resources */,
+				C8826A2026B61F4C00502999 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C8826A1B26B61F4C00502999 /* PBXTargetDependency */,
 			);
 			name = "Learn by Doing";
 			productName = "Learn by Doing";
 			productReference = C88269EF26B5C99400502999 /* Learn by Doing.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C8826A1426B61F4900502999 /* stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8826A1D26B61F4C00502999 /* Build configuration list for PBXNativeTarget "stickers" */;
+			buildPhases = (
+				C8826A1326B61F4900502999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = stickers;
+			productName = stickers;
+			productReference = C8826A1526B61F4900502999 /* stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
 		};
 /* End PBXNativeTarget section */
 
@@ -165,6 +222,9 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					C88269EE26B5C99400502999 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C8826A1426B61F4900502999 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
@@ -183,6 +243,7 @@
 			projectRoot = "";
 			targets = (
 				C88269EE26B5C99400502999 /* Learn by Doing */,
+				C8826A1426B61F4900502999 /* stickers */,
 			);
 		};
 /* End PBXProject section */
@@ -196,6 +257,14 @@
 				C8826A0E26B6176400502999 /* sound-chime.mp3 in Resources */,
 				C88269FA26B5C99800502999 /* Preview Assets.xcassets in Resources */,
 				C88269F726B5C99800502999 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8826A1326B61F4900502999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8826A1826B61F4C00502999 /* Stickers.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +285,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8826A1B26B61F4C00502999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8826A1426B61F4900502999 /* stickers */;
+			targetProxy = C8826A1A26B61F4C00502999 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C88269FC26B5C99800502999 /* Debug */ = {
@@ -378,6 +455,36 @@
 			};
 			name = Release;
 		};
+		C8826A1E26B61F4C00502999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FTU2HFGK26;
+				INFOPLIST_FILE = stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZdenoCepan.Learn-by-Doing.stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8826A1F26B61F4C00502999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FTU2HFGK26;
+				INFOPLIST_FILE = stickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZdenoCepan.Learn-by-Doing.stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -395,6 +502,15 @@
 			buildConfigurations = (
 				C88269FF26B5C99800502999 /* Debug */,
 				C8826A0026B5C99800502999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8826A1D26B61F4C00502999 /* Build configuration list for PBXNativeTarget "stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8826A1E26B61F4C00502999 /* Debug */,
+				C8826A1F26B61F4C00502999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
